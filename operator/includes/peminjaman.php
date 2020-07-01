@@ -6,7 +6,7 @@
 		<div class="card-body">
 			<div class="row">
 				<div class="col-md-6">
-					<form action="<?= $_SERVER['PHP_SELF'] ?>" method="POST" class="mt-3" autocomplete="off">
+					<form action="" method="POST" class="mt-3" autocomplete="off">
 						<div class="form-group">
 							<label for="id_barang">Nama Barang</label>
 							<input list="barang" name="nama_barang" placeholder="Pilih barang" class="form-control" required>
@@ -123,7 +123,7 @@
 						
 						<hr>
 
-						<form method="post" action="data-barang.php">
+						<form method="POST" action="">
 							<input type="hidden" name="id_user" value="<?= $_SESSION['id_user']; ?>">
 							<div class="row">
 								<div class="col-md-6">

@@ -6,8 +6,6 @@ if (!isset($_SESSION['id_user'])) {
 	header('Location: ../index.php');
 }
 
-require_once 'proses/proses-peminjaman.php';
-
 // Mengelurkan seluruh data barang yang ada di Database
 $sql 			= "SELECT * FROM barang";
 $query 			= $conn->query($sql);
